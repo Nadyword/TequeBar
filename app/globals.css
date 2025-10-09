@@ -61,10 +61,11 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
@@ -96,6 +97,8 @@
 /* Improved focus styles for accessibility */
 @layer base {
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-orange-500;
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-color: rgb(249 115 22);
   }
 }
