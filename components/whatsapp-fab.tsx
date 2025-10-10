@@ -7,7 +7,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 export default function WhatsappFab() {
   const handleWhatsAppClick = () => {
     const message = "Hola El Tequebar, quiero hacer un pedido"
-    const whatsappUrl = `https://wa.me/+1234567890?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/+14078420417?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
 
