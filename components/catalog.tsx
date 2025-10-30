@@ -1,44 +1,52 @@
 "use client"
 
+import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import type { Product } from "@/types"
 import { useCallback } from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import type { Product } from "@/types"
 
 const products: Product[] = [
   {
     id: "1",
-    name: "TOPOPS Premium",
-    description: "Tequeños clásicos de queso blanco, perfectos para cualquier ocasión",
+    name: "Tequeños de queso Premium",
+    description: "Tequeños clásicos de queso blanco",
     price: 40.0,
     imageSrc: "/products/topops-100.jpg",
     units: 100,
   },
   {
     id: "2",
-    name: "Chiaqueños Integrales",
-    description: "Tequeños con masa integral y semillas de chía, opción saludable",
-    price: 45.0,
-    imageSrc: "/products/chiaqueños-50.jpg",
-    units: 50,
-  },
-  {
-    id: "3",
-    name: "TOPOPS Mini",
-    description: "Mini tequeños ideales para aperitivos y eventos corporativos",
-    price: 25.0,
-    imageSrc: "/products/topops-20.jpg",
+    name: "Tequeños de chocolate",
+    description: "Tequeños rellenos de chocolate",
+    price: 15.0,
+    imageSrc: "/products/tequenos-chocolate.png",
     units: 20,
   },
   {
-    id: "4",
+    id: "3",
     name: "Tequeños Familiares",
-    description: "Caja familiar de tequeños tradicionales, perfecta para reuniones",
-    price: 65.0,
+    description: "Caja familiar de tequeños tradicionales",
+    price: 100.0,
     imageSrc: "/products/tequeños-150.jpg",
     units: 150,
   },
+  {
+    id: "4",
+    name: "Tequeños de queso blanco",
+    description: "Tequeños de queso blanco ideal para eventos",
+    price: 40.0,
+    imageSrc: "/products/PLAIN50_280x.avif",
+    units: 50,
+  },
+  {
+    id: "5",
+    name: "Nuevos Guavaqueños",
+    description: "Tequeños de queso blanco con guava",
+    price: 12.0,
+    imageSrc: "/products/Guavaquenos.webp",
+    units: 15,
+  }
 ]
 
 export default function Catalog() {
@@ -97,7 +105,7 @@ export default function Catalog() {
         </div>
 
         {/* Desktop: Grid */}
-        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {products.map((product) => (
             <Card
               key={product.id}
