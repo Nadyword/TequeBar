@@ -112,6 +112,7 @@ export default function HeroCarousel() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">El Tequeño Bar</h1>
 
           <p className="text-xl md:text-2xl mb-8 text-white drop-shadow-md">Tequeños gourmet para tus celebraciones</p>
+          <p className="text-xl md:text-2xl mb-8 text-white drop-shadow-md">Aliados de TQMUCH</p>
 
           <Button
             size="lg"
