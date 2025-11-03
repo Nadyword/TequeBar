@@ -59,7 +59,7 @@ export default function HeroCarousel() {
 
       {/* Header with Logo */}
       <header className="absolute top-16 left-6 z-20">
-        <Image src="/logo.svg" alt="El Tequeño Bar Logo" width={120} height={80} className="drop-shadow-lg" priority />
+        <Image src="/tqmuch-logotipo_95x.avif" alt="El Tequeño Bar Logo" width={90} height={90} className="drop-shadow-lg" priority />
       </header>
 
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

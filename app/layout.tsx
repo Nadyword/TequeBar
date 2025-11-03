@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   authors: [{ name: "El Tequebar" }],
   creator: "El Tequebar",
   publisher: "El Tequebar",
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "/tqmuch-logotipo_95x.avif", type: "image/avif" },
+    ],
+    apple: "/logo.svg",
+  },
   openGraph: {
     title: "El Tequebar | Tequeños gourmet en Orlando",
     description: "Servicio de tequeños gourmet tipo mobile bar para eventos en Orlando",

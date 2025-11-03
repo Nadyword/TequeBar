@@ -20,7 +20,7 @@ const products: Product[] = [
     name: "Tequeños de chocolate",
     description: "Tequeños rellenos de chocolate",
     price: 15.0,
-    imageSrc: "/products/tequenos-chocolate.png",
+    imageSrc: "/products/Chocolate.png",
     units: 20,
   },
   {
@@ -44,7 +44,7 @@ const products: Product[] = [
     name: "Nuevos Guavaqueños",
     description: "Tequeños de queso blanco con guava",
     price: 12.0,
-    imageSrc: "/products/Guavaquenos.webp",
+    imageSrc: "/products/Guavaquenos.png",
     units: 15,
   }
 ]
